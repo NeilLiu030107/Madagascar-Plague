@@ -1,0 +1,454 @@
+Hospitals/Regions,Undertreatment,Daily new case,cumulative healed,daily healed,cumulative death,daily death,Date ,Type,Total,Name
+General,238,40,652,62,45,2,10/20/2017,General,935,General
+General,225,29,689,37,46,1,10/21/2017,General,960,General
+General,219,18,780,36,63,3,10/23/2017,General,1062,General
+General,243,39,806,28,63,0,10/24/2017,General,1112,General
+General,180,28,881,77,63,0,10/25/2017,General,1124,General
+General,151,12,920,40,64,1,10/26/2017,General,1135,General
+General,141,21,948,30,64,0,10/27/2017,General,1153,General
+General,122,10,978,32,64,0,10/28/2017,General,1164,General
+General,106,2,1014,9,64,2,10/30/2017,General,1184,General
+General,83,7,1044,30,66,0,10/31/2017,General,1193,General
+General,76,7,1058,14,66,0,11/2/2017,General,1200,General
+General,55,16,1096,16,66,0,11/3/2017,General,1217,General
+General,47,6,1110,14,67,1,11/4/2017,General,1224,General
+General,29,2,1136,12,67,0,11/6/2017,General,1232,General
+General,35,7,1146,7,67,0,11/8/2017,General,1248,General
+General,33,6,1154,8,68,1,11/9/2017,General,1255,General
+General,34,3,1156,2,68,0,11/10/2017,General,1258,General
+General,28,3,1180,4,69,0,11/13/2017,General,1277,General
+ANOSIALA ,21,3,15,5,2,1,10/20/2017,Hospital,38,Anosiala 
+ANOSIALA ,19,0,18,3,2,0,10/21/2017,Hospital,39,Anosiala 
+ANOSIALA ,12,0,25,4,2,0,10/23/2017,Hospital,39,Anosiala 
+ANOSIALA ,12,0,25,0,2,0,10/24/2017,Hospital,39,Anosiala 
+ANOSIALA ,5,0,31,6,2,0,10/25/2017,Hospital,38,Anosiala 
+ANOSIALA ,3,1,34,3,2,0,10/26/2017,Hospital,39,Anosiala 
+ANOSIALA ,4,1,34,0,2,0,10/27/2017,Hospital,40,Anosiala 
+ANOSIALA ,3,0,35,1,2,0,10/28/2017,Hospital,40,Anosiala 
+ANOSIALA ,2,0,36,0,2,0,10/30/2017,Hospital,40,Anosiala 
+ANOSIALA ,2,0,36,0,2,0,10/31/2017,Hospital,40,Anosiala 
+ANOSIALA ,2,0,36,0,2,0,11/2/2017,Hospital,40,Anosiala 
+ANOSIALA ,4,3,37,1,2,0,11/3/2017,Hospital,43,Anosiala 
+ANOSIALA ,3,0,38,1,2,0,11/4/2017,Hospital,43,Anosiala 
+ANOSIALA ,4,0,39,0,2,0,11/6/2017,Hospital,45,Anosiala 
+ANOSIALA ,4,0,39,0,2,0,11/8/2017,Hospital,45,Anosiala 
+ANOSIALA ,4,0,39,0,2,0,11/9/2017,Hospital,45,Anosiala 
+ANOSIALA ,4,0,39,0,2,0,11/10/2017,Hospital,45,Anosiala 
+ANOSIALA ,1,0,42,0,2,0,11/13/2017,Hospital,45,Anosiala 
+ANOSY AVARATRA ,4,0,26,0,0,0,10/20/2017,Hospital,30,Anosy Avaratra 
+ANOSY AVARATRA ,4,1,27,1,0,0,10/21/2017,Hospital,31,Anosy Avaratra 
+ANOSY AVARATRA ,5,2,28,1,0,0,10/23/2017,Hospital,33,Anosy Avaratra 
+ANOSY AVARATRA ,5,1,29,1,0,0,10/24/2017,Hospital,34,Anosy Avaratra 
+ANOSY AVARATRA ,8,3,29,0,0,0,10/25/2017,Hospital,37,Anosy Avaratra 
+ANOSY AVARATRA ,8,1,30,1,0,0,10/26/2017,Hospital,38,Anosy Avaratra 
+ANOSY AVARATRA ,8,0,30,0,0,0,10/27/2017,Hospital,38,Anosy Avaratra 
+ANOSY AVARATRA ,7,0,31,1,0,0,10/28/2017,Hospital,38,Anosy Avaratra 
+ANOSY AVARATRA ,7,0,31,0,0,0,10/30/2017,Hospital,38,Anosy Avaratra 
+ANOSY AVARATRA ,4,0,34,3,0,0,10/31/2017,Hospital,38,Anosy Avaratra 
+ANOSY AVARATRA ,1,0,37,3,0,0,11/2/2017,Hospital,38,Anosy Avaratra 
+ANOSY AVARATRA ,0,0,38,0,0,0,11/3/2017,Hospital,38,Anosy Avaratra 
+ANOSY AVARATRA ,0,0,38,0,0,0,11/4/2017,Hospital,38,Anosy Avaratra 
+ANOSY AVARATRA ,0,0,38,0,0,0,11/6/2017,Hospital,38,Anosy Avaratra 
+ANOSY AVARATRA ,1,1,38,0,0,0,11/8/2017,Hospital,39,Anosy Avaratra 
+ANOSY AVARATRA ,1,0,38,0,0,0,11/9/2017,Hospital,39,Anosy Avaratra 
+ANOSY AVARATRA ,1,0,38,0,0,0,11/10/2017,Hospital,39,Anosy Avaratra 
+ANOSY AVARATRA ,2,1,38,0,0,0,11/13/2017,Hospital,40,Anosy Avaratra 
+Autres F.S. Analamanga ,44,8,34,2,5,0,10/24/2017,Hospital,83,Autres F.S. Analamanga 
+Autres F.S. Analamanga ,6,2,72,38,5,0,10/25/2017,Hospital,83,Autres F.S. Analamanga 
+Autres F.S. Analamanga ,6,0,72,0,6,1,10/26/2017,Hospital,84,Autres F.S. Analamanga 
+Autres F.S. Analamanga ,4,1,75,3,6,0,10/27/2017,Hospital,85,Autres F.S. Analamanga 
+Autres F.S. Analamanga ,5,0,75,0,6,0,10/28/2017,Hospital,86,Autres F.S. Analamanga 
+Autres F.S. Analamanga ,4,0,76,1,6,0,10/30/2017,Hospital,86,Autres F.S. Analamanga 
+Autres F.S. Analamanga ,5,1,76,0,6,0,10/31/2017,Hospital,87,Autres F.S. Analamanga 
+Autres F.S. Analamanga ,3,1,79,3,6,0,11/2/2017,Hospital,88,Autres F.S. Analamanga 
+Autres F.S. Analamanga ,2,0,80,1,6,0,11/3/2017,Hospital,88,Autres F.S. Analamanga 
+Autres F.S. Analamanga ,1,0,81,1,6,0,11/4/2017,Hospital,88,Autres F.S. Analamanga 
+Autres F.S. Analamanga ,0,0,82,1,6,0,11/6/2017,Hospital,88,Autres F.S. Analamanga 
+Autres F.S. Analamanga ,0,0,82,0,6,0,11/8/2017,Hospital,88,Autres F.S. Analamanga 
+Autres F.S. Analamanga ,0,0,82,0,6,0,11/9/2017,Hospital,88,Autres F.S. Analamanga 
+Autres F.S. Analamanga ,0,0,82,0,6,0,11/10/2017,Hospital,88,Autres F.S. Analamanga 
+Autres F.S. Analamanga ,0,0,82,0,6,0,11/13/2017,Hospital,88,Autres F.S. Analamanga 
+AUTRES FORMATION SANITAIRE ANALAMANGA ,23,1,32,6,5,0,10/23/2017,Hospital,60,Autres Formation Sanitaire Analamanga 
+CHAPA ,44,8,88,6,3,0,10/20/2017,Hospital,135,Chapa 
+CHAPA ,48,8,92,4,3,0,10/21/2017,Hospital,143,Chapa 
+CHAPA ,44,5,97,0,3,0,10/23/2017,Hospital,144,Chapa 
+CHAPA ,45,4,99,2,3,0,10/24/2017,Hospital,147,Chapa 
+CHAPA ,39,3,104,5,3,0,10/25/2017,Hospital,146,Chapa 
+CHAPA ,36,0,107,3,3,0,10/26/2017,Hospital,146,Chapa 
+CHAPA ,32,2,113,6,3,0,10/27/2017,Hospital,148,Chapa 
+CHAPA ,27,3,121,8,3,0,10/28/2017,Hospital,151,Chapa 
+CHAPA ,18,0,132,3,3,0,10/30/2017,Hospital,153,Chapa 
+CHAPA ,13,0,137,5,3,0,10/31/2017,Hospital,153,Chapa 
+CHAPA ,9,0,141,4,3,0,11/2/2017,Hospital,153,Chapa 
+CHAPA ,8,2,145,2,3,0,11/3/2017,Hospital,156,Chapa 
+CHAPA ,6,1,148,3,3,0,11/4/2017,Hospital,157,Chapa 
+CHAPA ,5,1,150,2,3,0,11/6/2017,Hospital,158,Chapa 
+CHAPA ,9,2,150,0,3,0,11/8/2017,Hospital,162,Chapa 
+CHAPA ,8,0,151,1,3,0,11/9/2017,Hospital,162,Chapa 
+CHAPA ,8,1,152,1,3,0,11/10/2017,Hospital,163,Chapa 
+CHAPA ,7,0,154,1,3,0,11/13/2017,Hospital,164,Chapa 
+FENOARIVO ,1,0,0,0,0,0,10/20/2017,Hospital,1,Fenoarivo 
+FENOARIVO ,1,0,0,0,0,0,10/21/2017,Hospital,1,Fenoarivo 
+FENOARIVO ,1,0,0,0,0,0,10/23/2017,Hospital,1,Fenoarivo 
+FENOARIVO ,1,0,0,0,0,0,10/24/2017,Hospital,1,Fenoarivo 
+FENOARIVO ,1,0,0,0,0,0,10/25/2017,Hospital,1,Fenoarivo 
+FENOARIVO ,1,0,0,0,0,0,10/26/2017,Hospital,1,Fenoarivo 
+FENOARIVO ,2,1,0,0,0,0,10/27/2017,Hospital,2,Fenoarivo 
+FENOARIVO ,3,1,0,0,0,0,10/28/2017,Hospital,3,Fenoarivo 
+FENOARIVO ,2,0,0,0,0,0,10/30/2017,Hospital,2,Fenoarivo 
+FENOARIVO ,2,0,0,0,0,0,10/31/2017,Hospital,2,Fenoarivo 
+FENOARIVO ,2,0,0,0,0,0,11/2/2017,Hospital,2,Fenoarivo 
+FENOARIVO ,2,0,0,0,0,0,11/3/2017,Hospital,2,Fenoarivo 
+FENOARIVO ,0,0,2,2,0,0,11/4/2017,Hospital,2,Fenoarivo 
+FENOARIVO ,0,0,2,0,0,0,11/6/2017,Hospital,2,Fenoarivo 
+FENOARIVO ,0,0,2,0,0,0,11/8/2017,Hospital,2,Fenoarivo 
+FENOARIVO ,0,0,2,0,0,0,11/9/2017,Hospital,2,Fenoarivo 
+FENOARIVO ,0,0,2,0,0,0,11/10/2017,Hospital,2,Fenoarivo 
+FENOARIVO ,0,0,2,0,0,0,11/13/2017,Hospital,2,Fenoarivo 
+HJRA ,2,0,1,1,0,0,10/20/2017,Hospital,3,Hjra 
+HJRA ,2,0,1,0,0,0,10/21/2017,Hospital,3,Hjra 
+HJRA ,2,0,1,0,0,0,10/23/2017,Hospital,3,Hjra 
+HJRA ,2,0,1,0,0,0,10/24/2017,Hospital,3,Hjra 
+HJRA ,2,0,1,0,0,0,10/25/2017,Hospital,3,Hjra 
+HJRA ,1,1,3,2,0,0,10/26/2017,Hospital,4,Hjra 
+HJRA ,1,0,3,0,0,0,10/27/2017,Hospital,4,Hjra 
+HJRA ,1,0,3,0,0,0,10/28/2017,Hospital,4,Hjra 
+HJRA ,3,0,3,0,1,0,10/30/2017,Hospital,7,Hjra 
+HJRA ,1,0,5,2,1,0,10/31/2017,Hospital,7,Hjra 
+HJRA ,1,0,5,0,1,0,11/2/2017,Hospital,7,Hjra 
+HJRA ,1,0,5,0,1,0,11/3/2017,Hospital,7,Hjra 
+HJRA ,0,0,6,1,1,0,11/4/2017,Hospital,7,Hjra 
+HJRA ,1,1,6,0,1,0,11/6/2017,Hospital,8,Hjra 
+HJRA ,1,0,6,0,1,0,11/8/2017,Hospital,8,Hjra 
+HJRA ,1,0,6,0,2,1,11/9/2017,Hospital,9,Hjra 
+HJRA ,1,0,6,0,2,0,11/10/2017,Hospital,9,Hjra 
+HJRA ,0,0,7,1,2,0,11/13/2017,Hospital,9,Hjra 
+HJRB ,45,17,62,14,0,0,10/20/2017,Hospital,107,Hjrb 
+HJRB ,33,7,75,13,0,0,10/21/2017,Hospital,108,Hjrb 
+HJRB ,34,7,86,5,9,0,10/23/2017,Hospital,129,Hjrb 
+HJRB ,42,10,86,0,9,0,10/24/2017,Hospital,137,Hjrb 
+HJRB ,32,8,95,9,9,0,10/25/2017,Hospital,136,Hjrb 
+HJRB ,29,2,99,4,9,0,10/26/2017,Hospital,137,Hjrb 
+HJRB ,18,1,108,9,9,0,10/27/2017,Hospital,135,Hjrb 
+HJRB ,5,1,122,14,9,0,10/28/2017,Hospital,136,Hjrb 
+HJRB ,6,1,123,1,9,0,10/30/2017,Hospital,138,Hjrb 
+HJRB ,4,1,126,3,9,0,10/31/2017,Hospital,139,Hjrb 
+HJRB ,4,0,126,0,9,0,11/2/2017,Hospital,139,Hjrb 
+HJRB ,4,3,129,2,9,0,11/3/2017,Hospital,142,Hjrb 
+HJRB ,7,3,129,0,9,0,11/4/2017,Hospital,145,Hjrb 
+HJRB ,6,0,130,0,9,0,11/6/2017,Hospital,145,Hjrb 
+HJRB ,4,1,134,3,9,0,11/8/2017,Hospital,147,Hjrb 
+HJRB ,4,1,135,1,9,0,11/9/2017,Hospital,148,Hjrb 
+HJRB ,4,1,136,1,9,0,11/10/2017,Hospital,149,Hjrb 
+HJRB ,2,0,138,1,9,0,11/13/2017,Hospital,149,Hjrb 
+HOMI ,6,0,28,0,1,0,10/20/2017,Hospital,35,Homi 
+HOMI ,3,0,31,3,1,0,10/21/2017,Hospital,35,Homi 
+HOMI ,3,0,31,0,1,0,10/23/2017,Hospital,35,Homi 
+HOMI ,1,0,33,2,1,0,10/24/2017,Hospital,35,Homi 
+HOMI ,2,1,33,0,1,0,10/25/2017,Hospital,36,Homi 
+HOMI ,1,0,34,1,1,0,10/26/2017,Hospital,36,Homi 
+HOMI ,1,0,34,0,1,0,10/27/2017,Hospital,36,Homi 
+HOMI ,2,1,34,0,1,0,10/28/2017,Hospital,37,Homi 
+HOMI ,1,0,35,1,1,0,10/30/2017,Hospital,37,Homi 
+HOMI ,1,0,35,0,1,0,10/31/2017,Hospital,37,Homi 
+HOMI ,2,1,35,0,1,0,11/2/2017,Hospital,38,Homi 
+HOMI ,2,0,35,0,1,0,11/3/2017,Hospital,38,Homi 
+HOMI ,1,0,36,1,1,0,11/4/2017,Hospital,38,Homi 
+HOMI ,0,0,38,1,1,0,11/6/2017,Hospital,39,Homi 
+HOMI ,0,0,38,0,1,0,11/8/2017,Hospital,39,Homi 
+HOMI ,0,0,38,0,1,0,11/9/2017,Hospital,39,Homi 
+HOMI ,0,0,38,0,1,0,11/10/2017,Hospital,39,Homi 
+HOMI ,1,0,38,0,1,0,11/13/2017,Hospital,40,Homi 
+ITAOSY ,1,0,2,2,0,0,10/20/2017,Hospital,3,Itaosy 
+ITAOSY ,1,0,2,0,0,0,10/21/2017,Hospital,3,Itaosy 
+ITAOSY ,1,0,2,0,0,0,10/23/2017,Hospital,3,Itaosy 
+ITAOSY ,1,0,2,0,0,0,10/24/2017,Hospital,3,Itaosy 
+ITAOSY ,4,4,3,1,0,0,10/25/2017,Hospital,7,Itaosy 
+ITAOSY ,4,0,3,0,0,0,10/26/2017,Hospital,7,Itaosy 
+ITAOSY ,4,0,3,0,0,0,10/27/2017,Hospital,7,Itaosy 
+ITAOSY ,4,0,3,0,0,0,10/28/2017,Hospital,7,Itaosy 
+ITAOSY ,4,0,3,0,0,0,10/30/2017,Hospital,7,Itaosy 
+ITAOSY ,4,0,3,0,0,0,10/31/2017,Hospital,7,Itaosy 
+ITAOSY ,4,0,3,0,0,0,11/2/2017,Hospital,7,Itaosy 
+ITAOSY ,0,0,7,0,0,0,11/3/2017,Hospital,7,Itaosy 
+ITAOSY ,0,0,7,0,0,0,11/4/2017,Hospital,7,Itaosy 
+ITAOSY ,1,0,7,0,0,0,11/6/2017,Hospital,8,Itaosy 
+ITAOSY ,1,0,7,0,0,0,11/8/2017,Hospital,8,Itaosy 
+ITAOSY ,1,0,7,0,0,0,11/9/2017,Hospital,8,Itaosy 
+ITAOSY ,1,0,7,0,0,0,11/10/2017,Hospital,8,Itaosy 
+ITAOSY ,0,0,8,0,0,0,11/13/2017,Hospital,8,Itaosy 
+PED AMB/DRA ,14,1,1,1,2,0,10/20/2017,Hospital,17,Ped Amb/Dra 
+PED AMB/DRA ,13,1,1,0,3,1,10/21/2017,Hospital,17,Ped Amb/Dra 
+PED AMB/DRA ,13,0,2,1,3,0,10/23/2017,Hospital,18,Ped Amb/Dra 
+PED AMB/DRA ,10,0,5,3,3,0,10/24/2017,Hospital,18,Ped Amb/Dra 
+PED AMB/DRA ,5,0,9,4,3,0,10/25/2017,Hospital,17,Ped Amb/Dra 
+PED AMB/DRA ,1,0,13,4,3,0,10/26/2017,Hospital,17,Ped Amb/Dra 
+PED AMB/DRA ,0,0,14,1,3,0,10/27/2017,Hospital,17,Ped Amb/Dra 
+PED AMB/DRA ,0,0,14,0,3,0,10/28/2017,Hospital,17,Ped Amb/Dra 
+PED AMB/DRA/CHUMET ,0,0,14,0,3,1,10/30/2017,Hospital,17,Ped Amb/Dra/Chumet 
+PED AMB/DRA/CHUMET ,0,0,14,0,4,0,10/31/2017,Hospital,18,Ped Amb/Dra/Chumet 
+PED AMB/DRA/CHUMET ,0,0,14,0,4,0,11/2/2017,Hospital,18,Ped Amb/Dra/Chumet 
+PED AMB/DRA/CHUMET ,0,0,14,0,4,0,11/3/2017,Hospital,18,Ped Amb/Dra/Chumet 
+PED AMB/DRA/CHUMET ,0,0,14,0,5,1,11/4/2017,Hospital,19,Ped Amb/Dra/Chumet 
+PED AMB/DRA/CHUMET ,0,0,14,0,5,0,11/6/2017,Hospital,19,Ped Amb/Dra/Chumet 
+PED AMB/DRA/CHUMET ,0,0,14,0,5,0,11/8/2017,Hospital,19,Ped Amb/Dra/Chumet 
+PED AMB/DRA/CHUMET ,0,0,14,0,5,0,11/9/2017,Hospital,19,Ped Amb/Dra/Chumet 
+PED AMB/DRA/CHUMET ,1,1,14,0,5,0,11/10/2017,Hospital,20,Ped Amb/Dra/Chumet 
+PED AMB/DRA/CHUMET ,0,0,14,0,5,0,11/13/2017,Hospital,19,Ped Amb/Dra/Chumet 
+Total  hopitaux Grands Tana ,115,14,272,11,18,0,10/23/2017,Hospital,405,Total  Hopitaux Grands Tana 
+Total  hopitaux Grands Tana ,119,15,280,8,18,0,10/24/2017,Hospital,417,Total  Hopitaux Grands Tana 
+Total  hopitaux Grands Tana ,98,19,305,25,18,0,10/25/2017,Hospital,421,Total  Hopitaux Grands Tana 
+Total  hopitaux Grands Tana ,84,5,323,18,18,0,10/26/2017,Hospital,425,Total  Hopitaux Grands Tana 
+Total  hopitaux Grands Tana ,70,5,339,16,18,0,10/27/2017,Hospital,427,Total  Hopitaux Grands Tana 
+Total  hopitaux Grands Tana ,52,6,363,24,18,0,10/28/2017,Hospital,433,Total  Hopitaux Grands Tana 
+Total  hopitaux Grands Tana ,43,1,377,5,20,0,10/30/2017,Hospital,440,Total  Hopitaux Grands Tana 
+Total  hopitaux Grands Tana ,31,1,390,13,20,0,10/31/2017,Hospital,441,Total  Hopitaux Grands Tana 
+Total  hopitaux Grands Tana ,25,1,397,7,20,0,11/2/2017,Hospital,442,Total  Hopitaux Grands Tana 
+Total  hopitaux Grands Tana ,21,8,410,5,20,0,11/3/2017,Hospital,451,Total  Hopitaux Grands Tana 
+Total  hopitaux Grands Tana ,17,4,418,8,21,1,11/4/2017,Hospital,456,Total  Hopitaux Grands Tana 
+Total  hopitaux Grands Tana ,17,2,424,3,21,0,11/6/2017,Hospital,462,Total  Hopitaux Grands Tana 
+Total  hopitaux Grands Tana ,20,4,428,3,21,0,11/8/2017,Hospital,469,Total  Hopitaux Grands Tana 
+Total  hopitaux Grands Tana ,19,1,430,2,22,1,11/9/2017,Hospital,471,Total  Hopitaux Grands Tana 
+Total  hopitaux Grands Tana ,20,3,432,2,22,0,11/10/2017,Hospital,474,Total  Hopitaux Grands Tana 
+Total  hopitaux Grands Tana ,13,1,441,3,22,0,11/13/2017,Hospital,476,Total  Hopitaux Grands Tana 
+ALAOTRA-MANGORO ,2,0,31,0,8,0,10/20/2017,Region,41,Alaotra-Mangoro 
+ALAOTRA-MANGORO ,0,2,32,0,8,0,10/21/2017,Region,40,Alaotra-Mangoro 
+ALAOTRA-MANGORO ,5,0,31,0,8,0,10/23/2017,Region,44,Alaotra-Mangoro 
+ALAOTRA-MANGORO ,7,2,31,0,8,0,10/24/2017,Region,46,Alaotra-Mangoro 
+ALAOTRA-MANGORO ,8,1,31,0,8,0,10/25/2017,Region,47,Alaotra-Mangoro 
+ALAOTRA-MANGORO ,8,0,31,0,8,0,10/26/2017,Region,47,Alaotra-Mangoro 
+ALAOTRA-MANGORO ,9,4,34,3,8,0,10/27/2017,Region,51,Alaotra-Mangoro 
+ALAOTRA-MANGORO ,9,0,34,0,8,0,10/28/2017,Region,51,Alaotra-Mangoro 
+ALAOTRA-MANGORO ,9,0,34,0,8,0,10/30/2017,Region,51,Alaotra-Mangoro 
+ALAOTRA-MANGORO ,8,0,35,1,9,0,10/31/2017,Region,52,Alaotra-Mangoro 
+ALAOTRA-MANGORO ,9,1,35,0,9,0,11/2/2017,Region,53,Alaotra-Mangoro 
+ALAOTRA-MANGORO ,8,3,38,0,9,0,11/3/2017,Region,55,Alaotra-Mangoro 
+ALAOTRA-MANGORO ,8,0,38,0,9,0,11/4/2017,Region,55,Alaotra-Mangoro 
+ALAOTRA-MANGORO ,1,0,46,6,9,0,11/6/2017,Region,56,Alaotra-Mangoro 
+ALAOTRA-MANGORO ,0,0,47,0,9,0,11/8/2017,Region,56,Alaotra-Mangoro 
+ALAOTRA-MANGORO ,0,0,47,0,9,0,11/9/2017,Region,56,Alaotra-Mangoro 
+ALAOTRA-MANGORO ,0,0,47,0,9,0,11/10/2017,Region,56,Alaotra-Mangoro 
+ALAOTRA-MANGORO ,0,0,56,0,9,0,11/13/2017,Region,65,Alaotra-Mangoro 
+AMORON'I MANIA ,8,1,5,0,3,1,10/20/2017,Region,16,Amoron'i mania 
+AMORON'I MANIA ,0,0,5,0,3,0,10/21/2017,Region,8,Amoron'i mania 
+AMORON'I MANIA ,9,0,6,0,3,0,10/23/2017,Region,18,Amoron'i mania 
+AMORON'I MANIA ,8,2,9,3,3,0,10/24/2017,Region,20,Amoron'i mania 
+AMORON'I MANIA ,7,0,10,1,3,0,10/25/2017,Region,20,Amoron'i mania 
+AMORON'I MANIA ,7,0,10,0,3,0,10/26/2017,Region,20,Amoron'i mania 
+AMORON'I MANIA ,10,4,11,1,3,0,10/27/2017,Region,24,Amoron'i mania 
+AMORON'I MANIA ,11,1,11,0,3,0,10/28/2017,Region,25,Amoron'i mania 
+AMORON'I MANIA ,9,0,14,2,3,0,10/30/2017,Region,26,Amoron'i mania 
+AMORON'I MANIA ,6,0,17,3,3,0,10/31/2017,Region,26,Amoron'i mania 
+AMORON'I MANIA ,8,2,17,0,3,0,11/2/2017,Region,28,Amoron'i mania 
+AMORON'I MANIA ,7,2,21,2,3,0,11/3/2017,Region,31,Amoron'i mania 
+AMORON'I MANIA ,6,0,22,1,3,0,11/4/2017,Region,31,Amoron'i mania 
+AMORON'I MANIA ,5,0,23,1,3,0,11/6/2017,Region,31,Amoron'i mania 
+AMORON'I MANIA ,8,1,25,2,3,0,11/8/2017,Region,36,Amoron'i mania 
+AMORON'I MANIA ,5,0,28,3,3,0,11/9/2017,Region,36,Amoron'i mania 
+AMORON'I MANIA ,5,0,28,0,3,0,11/10/2017,Region,36,Amoron'i mania 
+AMORON'I MANIA ,1,0,32,0,4,0,11/13/2017,Region,37,Amoron'i mania 
+ANALAMANGA ,138,29,223,29,8,1,10/20/2017,Region,369,Analamanga 
+ANALAMANGA ,124,17,247,24,9,1,10/21/2017,Region,380,Analamanga 
+ANALAMANGA ,138,15,304,17,23,0,10/23/2017,Region,465,Analamanga 
+ANALAMANGA ,163,23,314,10,23,0,10/24/2017,Region,500,Analamanga 
+ANALAMANGA ,104,21,377,63,23,0,10/25/2017,Region,504,Analamanga 
+ANALAMANGA ,90,5,395,18,24,1,10/26/2017,Region,509,Analamanga 
+ANALAMANGA ,74,6,414,19,24,0,10/27/2017,Region,512,Analamanga 
+ANALAMANGA ,57,6,438,24,23,0,10/28/2017,Region,518,Analamanga 
+ANALAMANGA ,47,1,453,6,26,0,10/30/2017,Region,526,Analamanga 
+ANALAMANGA ,36,2,466,13,26,0,10/31/2017,Region,528,Analamanga 
+ANALAMANGA ,28,2,476,10,26,0,11/2/2017,Region,530,Analamanga 
+ANALAMANGA ,23,8,490,6,26,0,11/3/2017,Region,539,Analamanga 
+ANALAMANGA ,18,4,499,9,27,1,11/4/2017,Region,544,Analamanga 
+ANALAMANGA ,17,2,506,4,27,0,11/6/2017,Region,550,Analamanga 
+ANALAMANGA ,20,4,510,3,27,0,11/8/2017,Region,557,Analamanga 
+ANALAMANGA ,19,1,512,2,28,1,11/9/2017,Region,559,Analamanga 
+ANALAMANGA ,20,3,514,2,28,0,11/10/2017,Region,562,Analamanga 
+ANALAMANGA ,13,1,523,3,28,0,11/13/2017,Region,564,Analamanga 
+ANALANJIROFO ,2,0,25,0,0,0,10/20/2017,Region,27,Analanjirofo 
+ANALANJIROFO ,2,0,25,0,0,0,10/21/2017,Region,27,Analanjirofo 
+ANALANJIROFO ,0,0,27,2,0,0,10/23/2017,Region,27,Analanjirofo 
+ANALANJIROFO ,0,0,27,2,0,0,10/24/2017,Region,27,Analanjirofo 
+ANALANJIROFO ,0,0,27,2,0,0,10/25/2017,Region,27,Analanjirofo 
+ANALANJIROFO ,0,0,27,2,0,0,10/26/2017,Region,27,Analanjirofo 
+ANALANJIROFO ,0,0,27,2,0,0,10/27/2017,Region,27,Analanjirofo 
+ANALANJIROFO ,0,0,27,0,0,0,10/28/2017,Region,27,Analanjirofo 
+ANALANJIROFO ,0,0,27,0,0,0,10/30/2017,Region,27,Analanjirofo 
+ANALANJIROFO ,0,0,27,0,0,0,10/31/2017,Region,27,Analanjirofo 
+ANALANJIROFO ,0,0,27,0,0,0,11/2/2017,Region,27,Analanjirofo 
+ANALANJIROFO ,0,0,27,0,0,0,11/3/2017,Region,27,Analanjirofo 
+ANALANJIROFO ,0,0,27,0,0,0,11/4/2017,Region,27,Analanjirofo 
+ANALANJIROFO ,0,0,27,0,0,0,11/6/2017,Region,27,Analanjirofo 
+ANALANJIROFO ,0,0,27,0,0,0,11/8/2017,Region,27,Analanjirofo 
+ANALANJIROFO ,0,0,27,0,0,0,11/9/2017,Region,27,Analanjirofo 
+ANALANJIROFO ,0,0,27,0,0,0,11/10/2017,Region,27,Analanjirofo 
+ANALANJIROFO ,0,0,27,0,0,0,11/13/2017,Region,27,Analanjirofo 
+ATSIMO-ANDREFANA ,1,0,3,0,0,0,10/20/2017,Region,4,Atsimo-Andrefana 
+ATSIMO-ANDREFANA ,0,0,3,0,0,0,10/21/2017,Region,3,Atsimo-Andrefana 
+ATSIMO-ANDREFANA ,1,0,3,0,1,1,10/23/2017,Region,5,Atsimo-Andrefana 
+ATSIMO-ANDREFANA ,1,0,3,0,1,0,10/24/2017,Region,5,Atsimo-Andrefana 
+ATSIMO-ANDREFANA ,1,0,3,0,1,0,10/25/2017,Region,5,Atsimo-Andrefana 
+ATSIMO-ANDREFANA ,1,0,3,0,1,0,10/26/2017,Region,5,Atsimo-Andrefana 
+ATSIMO-ANDREFANA ,0,0,4,1,1,0,10/27/2017,Region,5,Atsimo-Andrefana 
+ATSIMO-ANDREFANA ,0,0,4,0,1,0,10/28/2017,Region,5,Atsimo-Andrefana 
+ATSIMO-ANDREFANA ,0,0,4,0,1,0,10/30/2017,Region,5,Atsimo-Andrefana 
+ATSIMO-ANDREFANA ,0,0,4,0,1,0,10/31/2017,Region,5,Atsimo-Andrefana 
+ATSIMO-ANDREFANA ,0,0,4,0,1,0,11/2/2017,Region,5,Atsimo-Andrefana 
+ATSIMO-ANDREFANA ,0,0,4,0,1,0,11/3/2017,Region,5,Atsimo-Andrefana 
+ATSIMO-ANDREFANA ,0,0,4,0,1,0,11/4/2017,Region,5,Atsimo-Andrefana 
+ATSIMO-ANDREFANA ,0,0,4,0,1,0,11/6/2017,Region,5,Atsimo-Andrefana 
+ATSIMO-ANDREFANA ,0,0,4,0,1,0,11/8/2017,Region,5,Atsimo-Andrefana 
+ATSIMO-ANDREFANA ,0,0,4,0,1,0,11/9/2017,Region,5,Atsimo-Andrefana 
+ATSIMO-ANDREFANA ,0,0,4,0,1,0,11/10/2017,Region,5,Atsimo-Andrefana 
+ATSIMO-ANDREFANA ,1,0,4,0,1,0,11/13/2017,Region,6,Atsimo-Andrefana 
+BETSIBOKA ,0,0,0,0,0,0,10/20/2017,Region,0,Betsiboka 
+BETSIBOKA ,0,0,0,0,0,0,10/21/2017,Region,0,Betsiboka 
+BETSIBOKA ,0,0,0,0,0,0,10/23/2017,Region,0,Betsiboka 
+BETSIBOKA ,0,0,0,0,0,0,10/24/2017,Region,0,Betsiboka 
+BETSIBOKA ,0,0,0,0,0,0,10/25/2017,Region,0,Betsiboka 
+BETSIBOKA ,0,0,0,0,0,0,10/26/2017,Region,0,Betsiboka 
+BETSIBOKA ,0,0,0,0,0,0,10/27/2017,Region,0,Betsiboka 
+BETSIBOKA ,0,0,0,0,0,0,10/28/2017,Region,0,Betsiboka 
+BETSIBOKA ,0,0,0,0,0,0,10/30/2017,Region,0,Betsiboka 
+BETSIBOKA ,0,0,0,0,0,0,10/31/2017,Region,0,Betsiboka 
+BETSIBOKA ,0,0,0,0,0,0,11/2/2017,Region,0,Betsiboka 
+BETSIBOKA ,0,0,0,0,0,0,11/3/2017,Region,0,Betsiboka 
+BETSIBOKA ,0,0,0,0,0,0,11/4/2017,Region,0,Betsiboka 
+BETSIBOKA ,0,0,0,0,0,0,11/6/2017,Region,0,Betsiboka 
+BETSIBOKA ,0,0,0,0,0,0,11/8/2017,Region,0,Betsiboka 
+BETSIBOKA ,0,0,0,0,0,0,11/9/2017,Region,0,Betsiboka 
+BETSIBOKA ,0,0,0,0,0,0,11/10/2017,Region,0,Betsiboka 
+BETSIBOKA ,0,0,0,0,0,0,11/13/2017,Region,0,Betsiboka 
+BOENY ,0,0,15,1,0,0,10/20/2017,Region,15,Boeny 
+BOENY ,0,0,15,1,0,0,10/21/2017,Region,15,Boeny 
+BOENY ,1,0,15,0,0,0,10/23/2017,Region,16,Boeny 
+BOENY ,2,1,15,0,0,0,10/24/2017,Region,17,Boeny 
+BOENY ,2,0,15,0,0,0,10/25/2017,Region,17,Boeny 
+BOENY ,0,0,16,0,0,0,10/26/2017,Region,16,Boeny 
+BOENY ,0,0,16,0,0,0,10/27/2017,Region,16,Boeny 
+BOENY ,0,0,16,0,0,0,10/28/2017,Region,16,Boeny 
+BOENY ,0,0,16,0,0,0,10/30/2017,Region,16,Boeny 
+BOENY ,0,0,16,0,0,0,10/31/2017,Region,16,Boeny 
+BOENY ,0,0,16,0,0,0,11/2/2017,Region,16,Boeny 
+BOENY ,0,0,16,0,0,0,11/3/2017,Region,16,Boeny 
+BOENY ,0,0,16,0,0,0,11/4/2017,Region,16,Boeny 
+BOENY ,0,0,16,0,0,0,11/6/2017,Region,16,Boeny 
+BOENY ,0,0,16,0,0,0,11/8/2017,Region,16,Boeny 
+BOENY ,0,0,16,0,0,0,11/9/2017,Region,16,Boeny 
+BOENY ,0,0,16,0,0,0,11/10/2017,Region,16,Boeny 
+BOENY ,0,0,16,0,0,0,11/13/2017,Region,16,Boeny 
+BONGOLAVA ,4,0,15,1,5,0,10/20/2017,Region,24,Bongolava 
+BONGOLAVA ,0,1,16,1,5,0,10/21/2017,Region,21,Bongolava 
+BONGOLAVA ,3,0,17,0,5,0,10/23/2017,Region,25,Bongolava 
+BONGOLAVA ,2,0,18,1,5,0,10/24/2017,Region,25,Bongolava 
+BONGOLAVA ,1,0,19,1,5,0,10/25/2017,Region,25,Bongolava 
+BONGOLAVA ,2,1,19,0,5,0,10/26/2017,Region,26,Bongolava 
+BONGOLAVA ,2,0,19,0,5,0,10/27/2017,Region,26,Bongolava 
+BONGOLAVA ,3,1,19,0,5,0,10/28/2017,Region,27,Bongolava 
+BONGOLAVA ,3,0,19,0,5,0,10/30/2017,Region,27,Bongolava 
+BONGOLAVA ,2,0,20,1,5,0,10/31/2017,Region,27,Bongolava 
+BONGOLAVA ,2,0,20,0,5,0,11/2/2017,Region,27,Bongolava 
+BONGOLAVA ,1,0,21,0,5,0,11/3/2017,Region,27,Bongolava 
+BONGOLAVA ,0,0,22,1,5,0,11/4/2017,Region,27,Bongolava 
+BONGOLAVA ,0,0,22,0,5,0,11/6/2017,Region,27,Bongolava 
+BONGOLAVA ,0,0,22,0,5,0,11/8/2017,Region,27,Bongolava 
+BONGOLAVA ,1,1,22,0,5,0,11/9/2017,Region,28,Bongolava 
+BONGOLAVA ,1,0,22,0,5,0,11/10/2017,Region,28,Bongolava 
+BONGOLAVA ,2,0,22,0,5,0,11/13/2017,Region,29,Bongolava 
+ITASY ,2,2,15,1,2,0,10/20/2017,Region,19,Itasy 
+ITASY ,0,0,14,0,2,0,10/21/2017,Region,16,Itasy 
+ITASY ,2,0,14,0,3,1,10/23/2017,Region,19,Itasy 
+ITASY ,3,1,14,0,3,0,10/24/2017,Region,20,Itasy 
+ITASY ,3,0,14,0,3,0,10/25/2017,Region,20,Itasy 
+ITASY ,3,1,15,1,3,0,10/26/2017,Region,21,Itasy 
+ITASY ,3,0,15,0,3,0,10/27/2017,Region,21,Itasy 
+ITASY ,2,0,16,1,3,0,10/28/2017,Region,21,Itasy 
+ITASY ,2,0,24,0,2,1,10/30/2017,Region,28,Itasy 
+ITASY ,1,0,25,1,2,0,10/31/2017,Region,28,Itasy 
+ITASY ,1,0,25,0,2,0,11/2/2017,Region,28,Itasy 
+ITASY ,1,1,26,0,2,0,11/3/2017,Region,29,Itasy 
+ITASY ,1,0,26,0,2,0,11/4/2017,Region,29,Itasy 
+ITASY ,1,0,26,0,2,0,11/6/2017,Region,29,Itasy 
+ITASY ,1,0,26,0,2,0,11/8/2017,Region,29,Itasy 
+ITASY ,1,1,27,1,2,0,11/9/2017,Region,30,Itasy 
+ITASY ,1,0,27,0,2,0,11/10/2017,Region,30,Itasy 
+ITASY ,1,0,27,0,2,0,11/13/2017,Region,30,Itasy 
+MATSIATRA ,41,3,68,19,4,0,10/20/2017,Region,113,Matsiatra 
+MATSIATRA ,0,6,78,10,4,0,10/21/2017,Region,82,Matsiatra 
+MATSIATRA ,29,0,93,8,4,0,10/23/2017,Region,126,Matsiatra 
+MATSIATRA ,30,9,99,8,4,0,10/24/2017,Region,133,Matsiatra 
+MATSIATRA ,32,4,102,3,4,0,10/25/2017,Region,138,Matsiatra 
+MATSIATRA ,25,3,112,10,4,0,10/26/2017,Region,141,Matsiatra 
+MATSIATRA ,27,3,113,1,4,0,10/27/2017,Region,144,Matsiatra 
+MATSIATRA ,26,0,114,3,4,0,10/28/2017,Region,144,Matsiatra 
+MATSIATRA ,22,1,122,1,4,0,10/30/2017,Region,148,Matsiatra 
+MATSIATRA ,16,2,130,8,4,0,10/31/2017,Region,150,Matsiatra 
+MATSIATRA ,15,2,133,3,4,0,11/2/2017,Region,152,Matsiatra 
+MATSIATRA ,6,1,143,5,4,0,11/3/2017,Region,153,Matsiatra 
+MATSIATRA ,4,0,145,2,4,0,11/4/2017,Region,153,Matsiatra 
+MATSIATRA ,2,0,148,1,4,0,11/6/2017,Region,154,Matsiatra 
+MATSIATRA ,2,1,149,0,4,0,11/8/2017,Region,155,Matsiatra 
+MATSIATRA ,1,0,150,1,4,0,11/9/2017,Region,155,Matsiatra 
+MATSIATRA ,1,0,150,0,4,0,11/10/2017,Region,155,Matsiatra 
+MATSIATRA ,3,2,150,0,4,0,11/13/2017,Region,157,Matsiatra 
+MENABE ,1,0,2,0,0,0,10/20/2017,Region,3,Menabe 
+MENABE ,0,0,2,0,0,0,10/21/2017,Region,2,Menabe 
+MENABE ,1,0,2,0,0,0,10/23/2017,Region,3,Menabe 
+MENABE ,0,0,3,0,0,0,10/24/2017,Region,3,Menabe 
+MENABE ,0,0,3,0,0,0,10/25/2017,Region,3,Menabe 
+MENABE ,0,0,3,0,0,0,10/26/2017,Region,3,Menabe 
+MENABE ,0,0,3,0,0,0,10/27/2017,Region,3,Menabe 
+MENABE ,0,0,3,0,0,0,10/28/2017,Region,3,Menabe 
+MENABE ,0,0,3,0,0,0,10/30/2017,Region,3,Menabe 
+MENABE ,0,0,3,0,0,0,10/31/2017,Region,3,Menabe 
+MENABE ,0,0,3,0,0,0,11/2/2017,Region,3,Menabe 
+MENABE ,0,0,3,0,0,0,11/3/2017,Region,3,Menabe 
+MENABE ,0,0,3,0,0,0,11/4/2017,Region,3,Menabe 
+MENABE ,0,0,3,0,0,0,11/6/2017,Region,3,Menabe 
+MENABE ,0,0,3,0,0,0,11/8/2017,Region,3,Menabe 
+MENABE ,0,0,3,0,0,0,11/9/2017,Region,3,Menabe 
+MENABE ,0,0,3,0,0,0,11/10/2017,Region,3,Menabe 
+MENABE ,0,0,3,0,0,0,11/13/2017,Region,3,Menabe 
+TOAMASINA ,24,3,215,8,11,0,10/20/2017,Region,250,Toamasina 
+TOAMASINA ,24,1,216,1,11,0,10/21/2017,Region,251,Toamasina 
+TOAMASINA ,18,1,223,5,12,1,10/23/2017,Region,253,Toamasina 
+TOAMASINA ,16,0,225,2,12,0,10/24/2017,Region,253,Toamasina 
+TOAMASINA ,10,1,232,7,12,0,10/25/2017,Region,254,Toamasina 
+TOAMASINA ,7,2,237,5,12,0,10/26/2017,Region,256,Toamasina 
+TOAMASINA ,7,0,237,0,12,0,10/27/2017,Region,256,Toamasina 
+TOAMASINA ,6,1,239,2,12,0,10/28/2017,Region,257,Toamasina 
+TOAMASINA ,7,0,240,0,12,0,10/30/2017,Region,259,Toamasina 
+TOAMASINA ,6,1,242,2,12,0,10/31/2017,Region,260,Toamasina 
+TOAMASINA ,6,0,242,0,12,0,11/2/2017,Region,260,Toamasina 
+TOAMASINA ,2,1,247,3,12,0,11/3/2017,Region,261,Toamasina 
+TOAMASINA ,3,1,247,0,12,0,11/4/2017,Region,262,Toamasina 
+TOAMASINA ,2,0,247,0,12,0,11/6/2017,Region,261,Toamasina 
+TOAMASINA ,1,0,248,1,12,0,11/8/2017,Region,261,Toamasina 
+TOAMASINA ,0,0,249,1,12,0,11/9/2017,Region,261,Toamasina 
+TOAMASINA ,0,0,249,0,12,0,11/10/2017,Region,261,Toamasina 
+TOAMASINA ,0,0,249,0,12,0,11/13/2017,Region,261,Toamasina 
+VAKINANKARATRA ,15,2,36,3,4,0,10/20/2017,Region,55,Vakinankaratra 
+VAKINANKARATRA ,0,2,36,0,4,0,10/21/2017,Region,40,Vakinankaratra 
+VAKINANKARATRA ,12,2,45,4,4,0,10/23/2017,Region,61,Vakinankaratra 
+VAKINANKARATRA ,11,1,48,2,4,0,10/24/2017,Region,63,Vakinankaratra 
+VAKINANKARATRA ,12,1,48,0,4,0,10/25/2017,Region,64,Vakinankaratra 
+VAKINANKARATRA ,8,0,52,4,4,0,10/26/2017,Region,64,Vakinankaratra 
+VAKINANKARATRA ,9,4,55,3,4,0,10/27/2017,Region,68,Vakinankaratra 
+VAKINANKARATRA ,8,1,57,2,4,0,10/28/2017,Region,69,Vakinankaratra 
+VAKINANKARATRA ,7,0,58,0,4,0,10/30/2017,Region,69,Vakinankaratra 
+VAKINANKARATRA ,8,2,59,1,4,0,10/31/2017,Region,71,Vakinankaratra 
+VAKINANKARATRA ,7,0,60,1,4,0,11/2/2017,Region,71,Vakinankaratra 
+VAKINANKARATRA ,7,0,60,0,4,0,11/3/2017,Region,71,Vakinankaratra 
+VAKINANKARATRA ,7,1,61,1,4,0,11/4/2017,Region,72,Vakinankaratra 
+VAKINANKARATRA ,1,0,68,0,4,0,11/6/2017,Region,73,Vakinankaratra 
+VAKINANKARATRA ,3,1,69,1,4,0,11/8/2017,Region,76,Vakinankaratra 
+VAKINANKARATRA ,6,3,69,0,4,0,11/9/2017,Region,79,Vakinankaratra 
+VAKINANKARATRA ,6,0,69,0,4,0,11/10/2017,Region,79,Vakinankaratra 
+VAKINANKARATRA ,7,0,71,1,4,0,11/13/2017,Region,82,Vakinankaratra 
+,,,,,,, ,,,
+,,,,,,, ,,,
+ ,,,,,,,,,,
+ ,,,,,,,,,,
+ ,,,,,,,,,,
+ ,,,,,,,,,,
+ ,,,,,,,,,,

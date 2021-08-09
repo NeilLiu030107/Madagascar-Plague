@@ -5,6 +5,7 @@ library(sp)
 library(rgdal)
 library(raster)
 library(lubridate)
+data(package = .packages(all.available = TRUE))
 
 ###Part 1: Read data
 
@@ -37,13 +38,7 @@ night_light_resampled <- resample(night_light, pop_density, method="ngb")
 elev <- raster::getData(name="alt", country="MDG")
 
 #Travel time to healthcare facilities
-mdg_travel_time <- raster("Data/2020_walking_only_travel_time_to_healthcare.geotiff")
-
-mdg_adm_0 <- raster::getData("GADM", country="MDG", level=0) 
-
-dist_mdg <- raster::crop(x = mdg_travel_time, y = mdg_adm_0)
-
-dist_mdg_mask <- raster::mask(x = dist_mdg, mask = mdg_adm_0)
+dist_mdg_mask <- raster("Data/travelTime.tif")
 
 #Check spatial data frames
 pop_density

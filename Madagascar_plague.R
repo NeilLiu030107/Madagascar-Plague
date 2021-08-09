@@ -190,12 +190,17 @@ geographic %>%
   scale_y_continuous(sec.axis = sec_axis(~.*10, name = "Precipitation(mm)"))+
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))+
   ylab("Average Temperature(C)")
-# There aren't any significant climate variations right before and during the outbreak in different regions. The temperature in the most infected regions is around 25~30 Celsius around the outbreak period, favoring the activities of rat fleas. The rainfall condition is generally dry in Madagascar.
+# The average temperature didn't vary a lot throughout the year and across different regions. The temperature in the most infected regions is around 25~30 Celsius around Oct. 2017, favoring the activities of rat fleas,the important vector of plague. The rainfall in all recorded regions is at a low point around Oct. 2017 comparing with other months. This dry climatic condition is optimal to the flourishing of rat fleas.
 
 ##Other covariants
 #Merge cases data frame with spatial polygon data frame
 SPDF_10202017<- merge(mdg_adm_2, total_10202017, by.x="NAME_2", by.y="Name", all.x=TRUE)
 SPDF_11102017<- merge(mdg_adm_2, total_11132017, by.x="NAME_2", by.y="Name", all.x=TRUE)
+    
+glm_prevalence <-glm(Prevalence ~ night_light + pop_density + elevation, data=SPDF_11102017@data, family=binomial())
+summary(glm_prevalence)
+
+#All four covariants have extremely big p-values, indicating that the data set is so small that accurate predictions and models can not be made. 
 
 #Density~ Prevalence
 SPDF_10202017@data%>% 
@@ -204,21 +209,41 @@ SPDF_10202017@data%>%
   geom_smooth(method="glm")+
   xlab("Population density (per km^2)")+
   ylab("Prevalence(cases per thousand)")
-SPDF_10202017@data %>%
-  glm(Prevalence ~ pop_density, data=.)
-#There is a linear relationship between population density and plague prevalence.
+
+mod<-glm(Prevalence ~ pop_density, SPDF_10202017@data,family=binomial())
+summary(mod)
+#The p-value is 0.75, which rejects the alternative hypothesis that there is a correlation between population density and the prevalence of plague.
 
 #Health coverage ~ Mortality
 SPDF_10202017@data %>% 
   ggplot(aes(x=travel_time, y=Mortality))+
-  geom_point()
+  geom_point()+
+  geom_smooth(method="glm")+
+  xlab("Travel time to health facilities(min)")+
+  ylab("Mortality")
+
+mod2 <-glm(Mortality ~ travel_time, data=SPDF_10202017@data, family=binomial())
+summary(mod2)
 
 SPDF_11102017@data %>%
   ggplot(aes(x=travel_time, y=Mortality))+
-  geom_point()
+  geom_point()+
+  geom_smooth(method="glm")+
+  xlab("Travel time to health facilities(min)")+
+  ylab("Mortality")
 
-SPDF_11102017@data %>%
-  glm(Mortality ~ travel_time, data=.)
-#Interesting finding: As the outbreak proceeded to its end, the correlation between health coverage and mortality became more linear. I assume the improvement of Madagascar's health system and medical assistance during the outbreak gradually increased the effectiveness of medical care there. 
+mod3 <-glm(Mortality ~ travel_time, data=SPDF_11102017@data, family=binomial())
+summary(mod3)
+#Again, the p-values are 0.749 and 0.827, which is too big to accept the alternative hypothesis that there's a linear relationship between health coverage and the mortality of plague in different regions.
 
+#Discussion: The statistical modelling of Madagascar plague has two goals: visualizing the epidemic and exploring the impact of various factors in its spread. This research achieves success in visualization while making some progress toward the latter one.
+
+#The great availability of disease, environmental, and social data makes the statistical analysis feasible. All geo-spatial data are obtained from online sources and can be easily processed using R-language. However, it is also noticed that the data recording and sharing practice between local government department and the WHO was poor. The disease data from WHO is incomplete and can't be used in statistic analysis. The data is retrieved and organized from government reports manually, which is inconvenient to individual researchers. The government reports under-reported plague cases and only covers the cases in the late half of the outbreak comparing with WHO data, which creates great disruption to statistical analysis.
+
+#This research visualizes the outbreak using leaflet package and spatial data frame. The total case numbers of plague are plotted on a map over different administrative zones. By inputting dataframes of different dates, it's possible to observe the trend of the outbreak throughout the time frame. This research discusses the geographic distribution of the plague and its spreading patterns in different regions. 
+
+#This research makes some progress in exploring the correlation between environmental and social factors and the characteristics of the plague epidemic. The temperature and rainfall generally favored the proliferation of rat fleas, which propelled the plague outbreak around October, 2017. The modelling of other covariants such as population density meets roadblocks. It is possibly because the small number of data (11 administrative zones) limits the accuracy of the models. It illustrates that large area data are not effective when doing spatial modelling. The solution may rely on recording disease prevalence and incidence on a smaller and accurate scale, such as smaller areas or points.
+
+#This research discovers the spatial pattern of epidemic spread during the 2017 Madagascar plague outbreak and the effect of climate on the spread. This will hopefully provide a simple insight of plague control and prevention in Madagascar and the urgency to improve the disease monitoring system in underdeveloped countries. In terms of research, it shows the great potential of modern tools and methods when applying interdisplinary knowledge to real case senerios.     
+ 
 

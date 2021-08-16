@@ -5,7 +5,9 @@ library(sp)
 library(rgdal)
 library(raster)
 library(lubridate)
-data(package = .packages(all.available = TRUE))
+library(sf)
+library(spdep)
+
 
 ###Part 1: Read data
 
@@ -19,7 +21,7 @@ population <- read.csv("Data/Population.csv")
 #Adding prevalence and mortality columns to plague.csv
 plague <-inner_join(plague, population, by="Name")
 
-plague <-mutate(plague, Prevalence = plague$Undertreatment / plague$Population*1000, Mortality=plague$cumulative.death/(plague$cumulative.healed+plague$cumulative.death))
+plague <-mutate(plague, Prevalence = plague$Undertreatment / plague$Population*1000, Fatality=plague$cumulative.death/(plague$cumulative.healed+plague$cumulative.death))
 
 #Read geographic info of main cities(temp, elevation, coordination, precipitation)
 geographic <- read.csv("https://raw.githubusercontent.com/systemsmedicine/plague2017/master/data/1180122.csv")
@@ -36,6 +38,8 @@ night_light_resampled <- resample(night_light, pop_density, method="ngb")
 
 #Elevation
 elev <- raster::getData(name="alt", country="MDG")
+
+
 
 #Travel time to healthcare facilities
 dist_mdg_mask <- raster("Data/travelTime.tif")
@@ -84,17 +88,18 @@ leaflet() %>% addTiles() %>%
 # 10/20/2017 cases
 total_10202017 <- plague %>%
   subset(Date=="10/20/2017"& Type=="Region") %>%
-  select(Name, Total, Prevalence, Mortality)
+  select(Name, Total, Prevalence, Fatality)
 head(total_10202017)
 
 #11/13/2017 cases
 total_11132017 <- plague %>%
   subset(Date=="11/13/2017"& Type=="Region") %>%
-  select(Name, Total, Prevalence, Mortality)
+  select(Name, Total, Prevalence, Fatality)
 head(total_10202017)
 
 #Madagascar Provincial Map
 mdg_adm_2 <- raster::getData("GADM", country="MDG", level=2)
+mdg_provincial <-raster::getData("GADM", country="MDG", level=2)
 names(mdg_adm_2)
 
 ##Mapping function
@@ -211,25 +216,53 @@ summary(mod)
 
 #Health coverage ~ Mortality
 SPDF_10202017@data %>% 
-  ggplot(aes(x=travel_time, y=Mortality))+
+  ggplot(aes(x=travel_time, y=Fatality))+
   geom_point()+
   geom_smooth(method="glm")+
   xlab("Travel time to health facilities(min)")+
-  ylab("Mortality")
+  ylab("Fatality")
 
-mod2 <-glm(Mortality ~ travel_time, data=SPDF_10202017@data, family=binomial())
+mod2 <-glm(Fatality ~ travel_time, data=SPDF_10202017@data, family=binomial())
 summary(mod2)
 
 SPDF_11102017@data %>%
-  ggplot(aes(x=travel_time, y=Mortality))+
+  ggplot(aes(x=travel_time, y=Fatality))+
   geom_point()+
   geom_smooth(method="glm")+
   xlab("Travel time to health facilities(min)")+
   ylab("Mortality")
 
-mod3 <-glm(Mortality ~ travel_time, data=SPDF_11102017@data, family=binomial())
+mod3 <-glm(Fatality ~ travel_time, data=SPDF_11102017@data, family=binomial())
 summary(mod3)
 #Again, the p-values are 0.749 and 0.827, which is too big to accept the alternative hypothesis that there's a linear relationship between health coverage and the mortality of plague in different regions.
+
+#autocorrelation test
+#data with average prevalence and fatality over whole time frame 
+data <- plague %>%
+  group_by(Name) %>%
+  summarise(Prevalence=mean(Prevalence), Fatality=mean(Fatality))
+  
+data$Fatality[which(is.nan(data$Fatality))]<-0
+data_spatial <- sp::merge(mdg_provincial, data, by.x="NAME_2", by.y="Name", all.x=TRUE)
+
+data_spatial@data$Prevalence[which(is.na(data_spatial@data$Prevalence))] <-0
+
+data_spatial@data$Fatality[which(is.na(data_spatial@data$Fatality))] <-0
+
+# define contiguity neighbors
+data_nb <- poly2nb(mdg_provincial)
+
+#set weights
+data_w <-nb2listw(data_nb)
+
+#moran test
+moran.test(data_spatial@data$Prevalence,listw = data_w)
+
+moran.test(data_spatial@data$Fatality,listw = data_w)
+#In the Moran's test of prevalence, it produces a p-value of 0.004 and a positive Moran I statistic value, which indicates there's the evidence of spatial autocorrelation for the distribution of plague prevalence. It statistically supports that there's clustering of plague cases near the central and central east coast areas in Madagascar, which is observed in the visualization part.
+#In the contrary, it produces a p-value greater than 0.05 regarding to fatality, indicating there's no evidence of spatial clustering for the distribution of plague fatality across regions.
+#However, the size of the sample is less than 30, so the result's reliability is contested.
+
 
 #Discussion: The statistical modelling of Madagascar plague has two goals: visualizing the epidemic and exploring the impact of various factors in its spread. This research achieves success in visualization while making some progress toward the latter one.
 
@@ -237,8 +270,8 @@ summary(mod3)
 
 #This research visualizes the outbreak using leaflet package and spatial data frame. The total case numbers of plague are plotted on a map over different administrative zones. By inputting dataframes of different dates, it's possible to observe the trend of the outbreak throughout the time frame. This research discusses the geographic distribution of the plague and its spreading patterns in different regions. 
 
-#This research makes some progress in exploring the correlation between environmental and social factors and the characteristics of the plague epidemic. The temperature and rainfall generally favored the proliferation of rat fleas, which propelled the plague outbreak around October, 2017. The modelling of other covariants such as population density meets roadblocks. It is possibly because the small number of data (11 administrative zones) limits the accuracy of the models. It illustrates that large area data are not effective when doing spatial modelling. The solution may rely on recording disease prevalence and incidence on a smaller and accurate scale, such as smaller areas or points.
+#This research makes some progress in exploring the correlation between environmental and social factors and the characteristics of the plague epidemic. The temperature and rainfall generally favored the proliferation of rat fleas, which propelled the plague outbreak around October, 2017. The modelling of other covariates such as population density meets roadblocks. It is possibly because the small number of data (11 administrative zones) limits the accuracy of the models. It illustrates that large area data are not effective when doing spatial modelling. The solution may rely on recording disease prevalence and incidence on a smaller and accurate scale, such as smaller areas or points.
 
-#This research discovers the spatial pattern of epidemic spread during the 2017 Madagascar plague outbreak and the effect of climate on the spread. This will hopefully provide a simple insight of plague control and prevention in Madagascar and the urgency to improve the disease monitoring system in underdeveloped countries. In terms of research, it shows the great potential of modern tools and methods when applying interdisplinary knowledge to real case senerios.     
+#This research discovers the spatial pattern of epidemic spread during the 2017 Madagascar plague outbreak and the effect of climate on the spread. This will hopefully provide a simple insight of plague control and prevention in Madagascar and the urgency to improve the disease monitoring system in underdeveloped countries. In terms of research, it shows the great potential of modern tools and methods when applying interdisciplinary knowledge to real case scenarios.     
  
 

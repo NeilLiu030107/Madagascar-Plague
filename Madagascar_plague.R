@@ -193,56 +193,27 @@ geographic %>%
 # The average temperature didn't vary a lot throughout the year and across different regions. The temperature in the most infected regions is around 25~30 Celsius around Oct. 2017, favoring the activities of rat fleas,the important vector of plague. The rainfall in all recorded regions is at a low point around Oct. 2017 comparing with other months. This dry climatic condition is optimal to the flourishing of rat fleas.
 
 ##Other covariants
-#Merge cases data frame with spatial polygon data frame
-SPDF_10202017<- merge(mdg_adm_2, total_10202017, by.x="NAME_2", by.y="Name", all.x=TRUE)
-SPDF_11102017<- merge(mdg_adm_2, total_11132017, by.x="NAME_2", by.y="Name", all.x=TRUE)
-    
-glm_prevalence <-glm(Prevalence ~ night_light + pop_density + elevation, data=SPDF_11102017@data, family=binomial())
-summary(glm_prevalence)
-
-#All four covariants have extremely big p-values, indicating that the data set is so small that accurate predictions and models can not be made. 
-
-#Density~ Prevalence
-SPDF_10202017@data%>% 
-  ggplot(aes(x=pop_density, y=Prevalence))+
-  geom_point()+
-  geom_smooth(method="glm")+
-  xlab("Population density (per km^2)")+
-  ylab("Prevalence(cases per thousand)")
-
-mod<-glm(Prevalence ~ pop_density, SPDF_10202017@data,family=binomial())
-summary(mod)
-#The p-value is 0.75, which rejects the alternative hypothesis that there is a correlation between population density and the prevalence of plague.
-
-#Health coverage ~ Mortality
-SPDF_10202017@data %>% 
-  ggplot(aes(x=travel_time, y=Fatality))+
-  geom_point()+
-  geom_smooth(method="glm")+
-  xlab("Travel time to health facilities(min)")+
-  ylab("Fatality")
-
-mod2 <-glm(Fatality ~ travel_time, data=SPDF_10202017@data, family=binomial())
-summary(mod2)
-
-SPDF_11102017@data %>%
-  ggplot(aes(x=travel_time, y=Fatality))+
-  geom_point()+
-  geom_smooth(method="glm")+
-  xlab("Travel time to health facilities(min)")+
-  ylab("Mortality")
-
-mod3 <-glm(Fatality ~ travel_time, data=SPDF_11102017@data, family=binomial())
-summary(mod3)
-#Again, the p-values are 0.749 and 0.827, which is too big to accept the alternative hypothesis that there's a linear relationship between health coverage and the mortality of plague in different regions.
-
-#autocorrelation test
 #data with average prevalence and fatality over whole time frame 
 data <- plague %>%
   group_by(Name) %>%
-  summarise(Prevalence=mean(Prevalence), Fatality=mean(Fatality))
-  
+  summarise(Prevalence=mean(Prevalence), Fatality=mean(Fatality)) 
+
 data$Fatality[which(is.nan(data$Fatality))]<-0
+
+#Merge cases data frame with spatial polygon data frame
+SPDF<- merge(mdg_adm_2, data, by.x="NAME_2", by.y="Name", all.x=TRUE)
+    
+glm_prevalence <-glm(Prevalence ~ night_light + pop_density + elevation+travel_time, data=SPDF@data, family=binomial())
+summary(glm_prevalence)
+
+#All four covariates had extremely big p-values, rejecting the alternative hypothesis that there's statistical significance of the correlation between four social/environmental covariates and plague prevalence. The result may also indicated that the data set was so small that accurate predictions and models could not be made. 
+
+glm_fatality <-glm(Fatality ~ night_light+pop_density+elevation+travel_time, data=SPDF@data, family=binomial())
+summary(glm_fatality)
+##All four covariates had extremely big p-values, rejecting the alternative hypothesis that there's statistical significance of the correlation between four social/environmental covariates and plague fatality.
+
+#autocorrelation test
+
 data_spatial <- sp::merge(mdg_provincial, data, by.x="NAME_2", by.y="Name", all.x=TRUE)
 
 data_spatial@data$Prevalence[which(is.na(data_spatial@data$Prevalence))] <-0
@@ -260,7 +231,9 @@ moran.test(data_spatial@data$Prevalence,listw = data_w)
 
 moran.test(data_spatial@data$Fatality,listw = data_w)
 #In the Moran's test of prevalence, it produces a p-value of 0.004 and a positive Moran I statistic value, which indicates there's the evidence of spatial autocorrelation for the distribution of plague prevalence. It statistically supports that there's clustering of plague cases near the central and central east coast areas in Madagascar, which is observed in the visualization part.
+
 #In the contrary, it produces a p-value greater than 0.05 regarding to fatality, indicating there's no evidence of spatial clustering for the distribution of plague fatality across regions.
+
 #However, the size of the sample is less than 30, so the result's reliability is contested.
 
 
